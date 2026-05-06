@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ICICI Suite">
+  <test name="Insurance Tests">
+    <classes>
+      <class name="com.tests.CarInsuranceTest"/>
+      <class name="com.tests.HealthInsuranceTest"/>
+      <class name="com.tests.TravelInsuranceTest"/>
+    </classes>
+  </test>
+</suite>
