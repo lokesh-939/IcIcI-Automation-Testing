@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HealthInsurancePage {
     private WebDriver driver;
-
+    private WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
     private By addAdultButton = By.xpath("//div[@class='adult-count']//button[@class='plus-num js-maxpaddsadult']");
     private By dobDay = By.id("valid-adult1date");
     private By dobMonth = By.id("valid-adult1month");
@@ -46,7 +46,9 @@ public class HealthInsurancePage {
     }
 
     public void clickGetQuote() {
-        driver.findElement(getQuoteButton).click();
+    	WebElement getqoutes=driver.findElement(getQuoteButton);
+    	wait.until(ExpectedConditions.elementToBeClickable(getqoutes)).click();
+       
     }
 
     public void printPlans() {
