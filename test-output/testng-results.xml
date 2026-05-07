@@ -1,21 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-07T14:45:51 IST" name="Default suite" finished-at="2026-05-07T14:46:10 IST" duration-ms="19512">
+  <suite started-at="2026-05-07T15:46:25 IST" name="ICICI Suite" finished-at="2026-05-07T15:47:30 IST" duration-ms="64788">
     <groups>
     </groups>
-    <test started-at="2026-05-07T14:45:51 IST" name="Default test" finished-at="2026-05-07T14:46:10 IST" duration-ms="19512">
-      <class name="com.tests.HealthInsuranceTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tests.HealthInsuranceTest@73a1e9a9]" started-at="2026-05-07T14:45:51 IST" name="setup" finished-at="2026-05-07T14:45:53 IST" duration-ms="2757" status="PASS">
+    <test started-at="2026-05-07T15:46:25 IST" name="Insurance Tests" finished-at="2026-05-07T15:47:30 IST" duration-ms="64788">
+      <class name="com.tests.TravelInsuranceTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tests.TravelInsuranceTest@47eaca72]" started-at="2026-05-07T15:47:05 IST" name="setup" finished-at="2026-05-07T15:47:08 IST" duration-ms="3438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testHealthInsuranceQuote()[pri:0, instance:com.tests.HealthInsuranceTest@73a1e9a9]" started-at="2026-05-07T14:45:53 IST" name="testHealthInsuranceQuote" finished-at="2026-05-07T14:46:10 IST" duration-ms="16681" status="PASS">
+        <test-method signature="testTravelInsuranceQuote()[pri:0, instance:com.tests.TravelInsuranceTest@47eaca72]" started-at="2026-05-07T15:47:08 IST" name="testTravelInsuranceQuote" finished-at="2026-05-07T15:47:30 IST" duration-ms="21343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTravelInsuranceQuote -->
+      </class> <!-- com.tests.TravelInsuranceTest -->
+      <class name="com.tests.CarInsuranceTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tests.CarInsuranceTest@7cc0cdad]" started-at="2026-05-07T15:46:25 IST" name="setup" finished-at="2026-05-07T15:46:27 IST" duration-ms="2653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCarInsuranceErrorMessage()[pri:0, instance:com.tests.CarInsuranceTest@7cc0cdad]" started-at="2026-05-07T15:46:28 IST" name="testCarInsuranceErrorMessage" finished-at="2026-05-07T15:46:37 IST" duration-ms="9701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCarInsuranceErrorMessage -->
+      </class> <!-- com.tests.CarInsuranceTest -->
+      <class name="com.tests.HealthInsuranceTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tests.HealthInsuranceTest@1aafa419]" started-at="2026-05-07T15:46:37 IST" name="setup" finished-at="2026-05-07T15:46:40 IST" duration-ms="2664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testHealthInsuranceQuote()[pri:0, instance:com.tests.HealthInsuranceTest@1aafa419]" started-at="2026-05-07T15:46:40 IST" name="testHealthInsuranceQuote" finished-at="2026-05-07T15:47:05 IST" duration-ms="24860" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHealthInsuranceQuote -->
       </class> <!-- com.tests.HealthInsuranceTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Insurance Tests -->
+  </suite> <!-- ICICI Suite -->
 </testng-results>

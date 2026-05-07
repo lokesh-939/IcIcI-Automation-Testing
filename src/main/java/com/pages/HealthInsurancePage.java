@@ -4,6 +4,7 @@ package com.pages;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -47,7 +48,9 @@ public class HealthInsurancePage {
 
     public void clickGetQuote() {
     	WebElement getqoutes=driver.findElement(getQuoteButton);
-    	wait.until(ExpectedConditions.elementToBeClickable(getqoutes)).click();
+    	((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", getqoutes);
+    	getqoutes.click();
+    //	wait.until(ExpectedConditions.elementToBeClickable(getqoutes)).click();
        
     }
 

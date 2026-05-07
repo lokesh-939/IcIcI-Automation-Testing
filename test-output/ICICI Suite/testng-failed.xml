@@ -3,6 +3,12 @@
 <suite name="Failed suite [ICICI Suite]">
   <test thread-count="5" name="Insurance Tests(failed)">
     <classes>
+      <class name="com.tests.TravelInsuranceTest">
+        <methods>
+          <include name="setup"/>
+          <include name="testTravelInsuranceQuote"/>
+        </methods>
+      </class> <!-- com.tests.TravelInsuranceTest -->
       <class name="com.tests.HealthInsuranceTest">
         <methods>
           <include name="setup"/>
