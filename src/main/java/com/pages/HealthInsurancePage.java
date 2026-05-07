@@ -47,10 +47,11 @@ public class HealthInsurancePage {
     }
 
     public void clickGetQuote() {
-    	WebElement getqoutes=driver.findElement(getQuoteButton);
-    	((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", getqoutes);
-    	
-    	wait.until(ExpectedConditions.elementToBeClickable(getqoutes)).click();
+    	 	WebElement getqoutes=driver.findElement(getQuoteButton);
+//    	((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", getqoutes);
+//    
+    wait.until(ExpectedConditions.elementToBeClickable(getqoutes));
+    	((JavascriptExecutor) driver).executeScript("arguments[0].click();", getqoutes);
        
     }
 
