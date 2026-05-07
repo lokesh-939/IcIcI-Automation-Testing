@@ -49,7 +49,7 @@ public class HealthInsurancePage {
     public void clickGetQuote() {
     	WebElement getqoutes=driver.findElement(getQuoteButton);
     	((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", getqoutes);
-    	getqoutes.click();
+    	
     	wait.until(ExpectedConditions.elementToBeClickable(getqoutes)).click();
        
     }
